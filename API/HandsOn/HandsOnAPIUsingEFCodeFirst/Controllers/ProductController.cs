@@ -23,11 +23,16 @@ namespace HandsOnAPIUsingEFCodeFirst.Controllers
         //}
         //Get Endpoints
         [HttpGet,Route("GetProducts")]
+<<<<<<< HEAD
  
        // [Authorize(Roles ="Admin")]
 
 /*        [Authorize(Roles ="Admin")]
 */        public IActionResult GetAll() //Get All Product details
+=======
+        [Authorize(Roles ="Admin")]
+        public IActionResult GetAll() //Get All Product details
+>>>>>>> 904a1fe236f9c31d0d79a507a651ffe839aae96c
         {
             var products = _productRepository.GetAll();
             return StatusCode(200, products);
