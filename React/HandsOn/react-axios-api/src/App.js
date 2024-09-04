@@ -1,27 +1,26 @@
+
+
+// function App() {
+//   return (
+//     <div className="App">
+//       {/* <GetProducts /> */}
+//       {/* <AddProduct /> */}
+//       {/* <UpdateProduct /> */}    
+//       <Demo/>
+//       {/* <Demo1/> */}
+
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Login from "./login";
+import AdminDashboard from "./admin-dashboard";
+import UserDashboard from "./user-dashboard";
 import logo from "./logo.svg";
 import "./App.css";
 import GetProducts from "./GetProducts";
 import AddProduct from "./AddProduct";
 import UpdateProduct from "./UpdateProduct";
-<<<<<<< HEAD
 import Demo from "./demo1";
 import Demo1 from "./demo2";
 
-
-function App() {
-  return (
-    <div className="App">
-      {/* <GetProducts /> */}
-      {/* <AddProduct /> */}
-      {/* <UpdateProduct /> */}    
-      <Demo/>
-      {/* <Demo1/> */}
-
-=======
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Login from "./login";
-import AdminDashboard from "./admin-dashboard";
-import UserDashboard from "./user-dashboard";
 function App() {
   return (
     <div className="App">
@@ -36,7 +35,6 @@ function App() {
           <Route path="user-dashboard" element={<UserDashboard />} />
         </Routes>
       </BrowserRouter>
->>>>>>> 904a1fe236f9c31d0d79a507a651ffe839aae96c
     </div>
   );
 }
