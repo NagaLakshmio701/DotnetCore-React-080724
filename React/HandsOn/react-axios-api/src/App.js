@@ -18,21 +18,41 @@ import "./App.css";
 import GetProducts from "./GetProducts";
 import AddProduct from "./AddProduct";
 import UpdateProduct from "./UpdateProduct";
+<<<<<<< HEAD
 import Demo from "./demo1";
 import Demo1 from "./demo2";
 
+=======
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Login from "./login";
+import AdminDashboard from "./admin-dashboard";
+import UserDashboard from "./user-dashboard";
+import Register from "./register";
+import Layout from "./Layout";
+import Search from "./search";
+import ViewCart from "./viewcart";
+>>>>>>> 297c85361d2321bc18a63d485f60429f6bc5bad3
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route index element={<GetProducts />} />
-          <Route path="add" element={<AddProduct />} />
-          <Route path="update" element={<UpdateProduct />} />
-          <Route path="login" element={<Login />} />
-          <Route path="getall" element={<GetProducts />} />
-          <Route path="admin-dashboard" element={<AdminDashboard />} />
-          <Route path="user-dashboard" element={<UserDashboard />} />
+          {/* Anonymous User */}
+          <Route path="/" element={<Layout />}>
+            <Route path="login" element={<Login />} />
+            <Route path="register" element={<Register />} />
+          </Route>
+          {/* Admin Dashboard */}
+          <Route path="admin-dashboard" element={<AdminDashboard />}>
+            <Route path="getall" element={<GetProducts />} />
+            <Route path="add" element={<AddProduct />} />
+            <Route path="update" element={<UpdateProduct />} />
+          </Route>
+          {/* User Dashboard */}
+          <Route path="user-dashboard" element={<UserDashboard />}>
+            <Route path="search" element={<Search />} />
+            <Route path="view-cart" element={<ViewCart />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </div>

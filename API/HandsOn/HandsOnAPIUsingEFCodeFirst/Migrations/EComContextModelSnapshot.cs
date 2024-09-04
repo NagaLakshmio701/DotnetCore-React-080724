@@ -22,6 +22,22 @@ namespace HandsOnAPIUsingEFCodeFirst.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("HandsOnAPIUsingEFCodeFirst.Entities.Cart", b =>
+                {
+                    b.Property<string>("CartId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("CartId");
+
+                    b.ToTable("Carts");
+                });
+
             modelBuilder.Entity("HandsOnAPIUsingEFCodeFirst.Entities.Order", b =>
                 {
                     b.Property<Guid>("OrderId")
@@ -32,6 +48,9 @@ namespace HandsOnAPIUsingEFCodeFirst.Migrations
                         .HasColumnType("Date");
 
                     b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TotalPrice")
                         .HasColumnType("int");
 
                     b.Property<int>("UserId")

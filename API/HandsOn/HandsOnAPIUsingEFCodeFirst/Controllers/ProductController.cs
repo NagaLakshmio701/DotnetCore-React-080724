@@ -22,6 +22,7 @@ namespace HandsOnAPIUsingEFCodeFirst.Controllers
         //    _productRepository = new ProductRepository();
         //}
         //Get Endpoints
+<<<<<<< HEAD
 
  
        // [Authorize(Roles ="Admin")]
@@ -29,6 +30,10 @@ namespace HandsOnAPIUsingEFCodeFirst.Controllers
 /*        [Authorize(Roles ="Admin")]
 
         [Authorize(Roles ="Admin")]
+=======
+        [HttpGet,Route("GetProducts")]
+        //[Authorize(Roles ="Admin")]
+>>>>>>> 297c85361d2321bc18a63d485f60429f6bc5bad3
         public IActionResult GetAll() //Get All Product details
  904a1fe236f9c31d0d79a507a651ffe839aae96c
         {
