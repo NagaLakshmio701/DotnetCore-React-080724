@@ -4,16 +4,19 @@ using HandsOnAPIUsingEFCodeFirst.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
 namespace HandsOnAPIUsingEFCodeFirst.Migrations
 {
-    [DbContext(typeof(EComContext))]
-    partial class EComContextModelSnapshot : ModelSnapshot
+    [DbContext(typeof(ECommContext))]
+    [Migration("20240904112105_mig9")]
+    partial class mig9
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

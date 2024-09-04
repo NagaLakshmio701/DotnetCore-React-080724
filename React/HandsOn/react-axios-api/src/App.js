@@ -18,9 +18,13 @@ import Register from "./register";
 import Layout from "./Layout";
 import Search from "./search";
 import ViewCart from "./viewcart";
+<<<<<<< HEAD
 import GetProducts from "./GetProducts";
 import AddProduct from "./AddProduct";
 import UpdateProduct from "./UpdateProduct";
+=======
+import Transaction from "./transaction";
+>>>>>>> d74d1c4f323a18b7d0fca185cf48f4d81a2f386f
 function App() {
   return (
     <div className="App">
@@ -41,6 +45,7 @@ function App() {
           <Route path="user-dashboard" element={<UserDashboard />}>
             <Route path="search" element={<Search />} />
             <Route path="view-cart" element={<ViewCart />} />
+            <Route path="tran" element={<Transaction />} />
           </Route>
         </Routes>
       </BrowserRouter>

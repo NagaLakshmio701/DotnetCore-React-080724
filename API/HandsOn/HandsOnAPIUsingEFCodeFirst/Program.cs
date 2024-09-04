@@ -23,7 +23,11 @@ namespace HandsOnAPIUsingEFCodeFirst
 =======
             builder.Services.AddTransient<IProuctAsyncRepository, ProuctAsyncRepository>();
             builder.Services.AddTransient<ICartRepository, CartRepository>();
+<<<<<<< HEAD
 >>>>>>> 297c85361d2321bc18a63d485f60429f6bc5bad3
+=======
+            builder.Services.AddTransient<TransactionRepository>();
+>>>>>>> d74d1c4f323a18b7d0fca185cf48f4d81a2f386f
             builder.Services.AddControllers();
 
             // Configure CORS
