@@ -3,6 +3,7 @@ import axios from "axios";
 import Item from "./item";
 const Search = () => {
   const [items, GetItems] = useState([]);
+  //let userId = useContext(UserContext);
   useEffect(() => {
     axios
       .get("http://localhost:5005/api/Product/GetProducts", {
@@ -19,11 +20,13 @@ const Search = () => {
   const addToCart = (pId) => {
     console.log(sessionStorage.getItem("userId"));
 
+    let userId = sessionStorage.getItem("userId");
+    console.log(userId);
     // e.preventDefault();
     let cart = {
       cartId: "0",
       productId: pId,
-      userId: sessionStorage.getItem("userId"),
+      userId: userId,
     };
     console.log(cart);
     axios
