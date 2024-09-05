@@ -21,7 +21,7 @@ const GetProducts = () => {
       .delete("http://localhost:5005/api/Product/DeleteProduct?id=" + productId)
       .then((res) => {})
       .catch((err) => console.log(err));
-  };
+  };  
   return (
     <div className="container">
       <form>

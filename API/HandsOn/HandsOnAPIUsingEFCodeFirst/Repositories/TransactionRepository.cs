@@ -4,8 +4,8 @@ namespace HandsOnAPIUsingEFCodeFirst.Repositories
 {
     public class TransactionRepository
     {
-        private readonly ECommContext _context;
-        public TransactionRepository(ECommContext context)
+        private readonly EComContext _context;
+        public TransactionRepository(EComContext context)
         {
             _context = context;
         }

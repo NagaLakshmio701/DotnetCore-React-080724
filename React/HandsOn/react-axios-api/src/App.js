@@ -5,7 +5,6 @@
 // import AdminDashboard from "./admin-dashboard";
 // import UserDashboard from "./user-dashboard";
 // import logo from "./logo.svg";
-// import "./App.css";
 
 // import Demo from "./demo1";
 // import Demo1 from "./demo2";
@@ -18,13 +17,12 @@ import Register from "./register";
 import Layout from "./Layout";
 import Search from "./search";
 import ViewCart from "./viewcart";
-<<<<<<< HEAD
 import GetProducts from "./GetProducts";
 import AddProduct from "./AddProduct";
 import UpdateProduct from "./UpdateProduct";
-=======
 import Transaction from "./transaction";
->>>>>>> d74d1c4f323a18b7d0fca185cf48f4d81a2f386f
+import "./App.css";
+
 function App() {
   return (
     <div className="App">

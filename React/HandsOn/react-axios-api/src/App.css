@@ -91,13 +91,13 @@ main h1
 
 footer {
     height: 50px;
-    background-color: orangered;
+    background-color: rgb(0, 255, 85);
 
 
 }
 
 footer h2 {
     text-align: center;
-    color: whitesmoke;
-    font-size: 15px;
+    color:whitesmoke;
+    font-size: 20px;
 }

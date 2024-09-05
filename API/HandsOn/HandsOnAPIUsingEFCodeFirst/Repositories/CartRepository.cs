@@ -5,9 +5,9 @@ namespace HandsOnAPIUsingEFCodeFirst.Repositories
 {
     public class CartRepository : ICartRepository
     {
-        private readonly ECommContext _context;
+        private readonly EComContext _context;
 
-        public CartRepository(ECommContext context)
+        public CartRepository(EComContext context)
         {
             _context = context;
         }

@@ -5,7 +5,7 @@ export default function Layout() {
   return (
     <div>
       <header>
-        <h1>E APP</h1>
+        <h1>APP</h1>
       </header>
       <nav>
         <ul>
