@@ -26,6 +26,8 @@ const ViewCart = () => {
       .catch((error) => console.log(error));
   }, []);
   const removeCartItem = (cartId) => {};
+
+  
   const makeOrder = () => {
     const order = {
       productId: 4,

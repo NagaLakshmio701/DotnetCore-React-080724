@@ -24,16 +24,13 @@ const GetProducts = () => {
       .delete("http://localhost:5005/api/Product/DeleteProduct?id=" + productId)
       .then((res) => {})
       .catch((err) => console.log(err));
-<<<<<<< HEAD
   };  
-=======
-  };
+  
   const Update = (productId) => {
     sessionStorage.setItem("Pid", productId);
     navigate("/admin-dashboard/update");
-  };
+  }
 
->>>>>>> f82fdae81d28a6e761a31eb3022a08ea2e8d709d
   return (
     <div className="container">
       <form>
