@@ -7,9 +7,9 @@ import Demo3 from "./demo3";
 function App() {
   return (
     <div className="App">
-      {/* <Demo1 /> */}
-      {/* <Demo2 /> */}
-      <Demo3 />
+      <Demo1 />
+      {/* <Demo2 />
+      <Demo3 /> */}
     </div>
   );
 }

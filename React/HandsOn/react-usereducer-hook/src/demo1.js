@@ -1,7 +1,9 @@
 import react, { useReducer } from "react";
 //define initialState and reducer
-const initialState = 0;
+// const initialState = 0;
 const reducer = (state, action) => {
+  console.log("s",state)
+  console.log("a",action)
   switch (action) {
     case "add":
       return state + 1;
@@ -14,12 +16,13 @@ const reducer = (state, action) => {
   }
 };
 const Demo1 = () => {
-  const [state, dispacth] = useReducer(reducer, initialState);
+  const [state, dispacth] = useReducer(reducer, 0);
   return (
     <>
+      <button onClick={() => dispacth("add")}>+</button>
       <h2>{state}</h2>
-      <button onClick={() => dispacth("add")}>Add</button>
-      <button onClick={() => dispacth("subtract")}>Subtract</button>
+
+      <button onClick={() => dispacth("subtract")}>-</button>
       <button onClick={() => dispacth("reset")}>Reset</button>
     </>
   );
